@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xam</title>
+        <link rel="stylesheet" href="/Inicio/Inicio.css">
+        <link href="https://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <button class="icon-button" id="menuBtn">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <img src="Imagen_inicio/XAM 2.png" alt="Logo Xam" class="logo">
+            </div>
+            <div class="navbar-right">
+                <button class="icon-button" id="notificationsBtn">
+                    <i class="bx bxs-bell-ring"></i>
+                </button>
+                <button class="icon-button" id="profileBtn">
+                    <i class="bx bxs-user-circle"></i> 
+                </button>
+            </div>
+        </nav>
+
+        <!-- Menu deslizante -->
+        <div id="slidingMenu" class="sliding-menu">
+            <ul>
+                <li><a href="#"><i class="bx bx-home"></i> Inicio</a></li>
+                <li><a href="#"><i class="bx bx-book"></i> Mis Exámenes</a></li>
+                <li><a href="#"><i class="bx bx-help-circle"></i> Ayuda</a></li>
+            </ul>
+        </div>
+
+        <!-- Rectángulo plomo ajustado al tamaño del menú -->
+        <div class="container">
+            <div id="plomoRectangle" class="plomo-rectangulo">
+                <div id="userInfo">
+                    <img src="Imagen_inicio/profesora.png" alt="User Avatar" class="user-avatar">
+                    <div id="userDetails">
+                        <p id="userName">Deysi Cabrera Ortiz</p>
+                        <p id="userEmail">desor03c@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Título fuera del cuadro -->
+        <div class="title">
+            <i class='bx bxs-file'>​</i>
+            <h2>Crear Examen</h2>
+        </div>
+        <div class="file-upload">
+            <div class="file-drop-area">
+                <input type="file" id="fileInput" multiple />
+                <button class="choose-btn">
+                    <img src="Imagen_inicio/do.png" alt="user-doc" class="user-doc">
+                    <p id="escogerArch">
+                        Escoger Archivos
+                    </p>
+                </button>
+                <p class="file-msg">O soltar archivos aquí</p>
+            </div>
+        </div>
+
+        <!-- Sección para mostrar los archivos PDF y Word subidos -->
+        <div class="pdf-section">
+            <h2>Archivos Subidos</h2>
+            <div id="pdfList" class="pdf-list">
+                <!-- Los archivos se agregarán aquí dinámicamente -->
+            </div>
+        </div>
+        <script src="/Inicio/Inicio.js"></script>
+    </body>
+</html>
